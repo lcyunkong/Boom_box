@@ -1,0 +1,21 @@
+Info:
+  description: # 漏洞描述
+
+Request: # 定义请求包
+  re0: # 请求包序号，如果有多个请求包可依次定义re0、re1、re2...
+    method:  # 请求方法POST、GET、PATCH...
+    path: # 请求URI
+    headers: # 定义请求头，请求哪些字段可自行定义，以下是举例
+      Host: ${Host}
+      Accept-Encoding:
+      Accept:
+      Accept-Language:
+      User-Agent:
+      Connection:
+      Content-Type:
+    data: # 请求所带参数，如果有换行用\r\n代替
+  re1:
+
+Response: # 定义响应包，定义判断漏洞是否时所需要的字段
+  status_code: 400 # 响应码
+  text_char: # 响应特征
